@@ -1,0 +1,35 @@
+{
+  "name": "object",
+  "plural": "objects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "attributes": {
+      "type": "string",
+      "required": true
+    },
+    "creation_user": {
+      "type": "string",
+      "required": true,
+      "default": "Admin"
+    },
+    "update_user": {
+      "type": "string"
+    },
+    "creation_date": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "update_date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
