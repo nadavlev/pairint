@@ -20,12 +20,17 @@
       "type": "string"
     },
     "creation_date": {
-      "type": "date",
+      "type": "string",
       "required": true,
-      "defaultFn": "now"
+      "format": "date-time"
     },
     "update_date": {
-      "type": "date"
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "number",
+      "format": "double"
     }
   },
   "validations": [],

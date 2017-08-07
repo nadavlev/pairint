@@ -1,0 +1,30 @@
+{
+  "name": "DynamicAPI",
+  "plural": "DynamicAPIs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "accepts": {
+      "type": "object",
+      "required": true
+    },
+    "returns": {
+      "type": "object"
+    },
+    "method": {
+      "type": "string",
+      "default": "GET"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

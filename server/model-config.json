@@ -14,7 +14,14 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true,
+    "acls": [{
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "testing"
+    }]
   },
   "AccessToken": {
     "dataSource": "db",
@@ -36,7 +43,8 @@
     "public": false
   },
   "Message": {
-    "dataSource": null
+    "dataSource": "db",
+    "public": true
   },
   "object": {
     "dataSource": "db",
@@ -45,5 +53,9 @@
   "x-any": {
     "dataSource": "db",
     "public": false
+  },
+  "DynamicAPI": {
+    "dataSource": "db",
+    "public": true
   }
 }
